@@ -1,0 +1,5 @@
+Daniel Sanchez
+- Worked on logged in / logged out status for admins and customers (separate)
+- Created customer side of website
+- Created CSS 
+- Ensured customer side met customers needs per assignment
