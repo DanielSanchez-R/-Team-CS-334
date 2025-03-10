@@ -2,6 +2,8 @@ Daniel Sanchez
 - Wrote about.html, checkout.html, dashboard.html, guestcheckout.html, login.html, main.html, manager.html, payment.html
 - Extensive efforts in stylizing the user side of the page, designed forms on all pages, etc
 - Provided assets (desert_background.png, styles.css, tea_background.png)
+- Created the original product data that was converted to products.json
+- Set up GitHub Pages
 Hannah Knight
 - Met with professor
 - Worked on validating logged in / logged out status for admins and customers (separate)
