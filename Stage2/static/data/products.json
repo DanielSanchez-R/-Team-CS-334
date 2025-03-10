@@ -1,5 +1,5 @@
 [
-            { "name": "New Mexico Green Tea", "price": 5.99, "image": "../../Stage2/static/assets/tea_background.png" },
+            { "name": "New Mexico Green Tea", "price": 5.99, "image": "Stage2/static/assets/tea_background.png" },
             { "name": "New Mexico Black Tea", "price": 6.99, "image": "../../static/assets/tea_background.png" },
             { "name": "New Mexico Peppermint Tea", "price": 7.49, "image": "../../static/assets/tea_background.png" },
             { "name": "New Mexico Chamomile Tea", "price": 5.49, "image": "../../static/assets/tea_background.png" },
