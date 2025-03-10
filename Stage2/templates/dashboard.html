@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Dashboard - Tea Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        if (localStorage.getItem('adminLoggedIn') !== 'true') {
+            alert("You aren't logged in. Please log in and try again.");
+            window.location.href = 'login.html';
+        }
+    </script>
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="manager.html">Tea Shop Admin</a>
+        <button class="btn btn-danger" onclick="logout()">Logout</button>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <h2 class="text-center">Manage Products</h2>
+    <table class="table table-bordered mt-3">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="productsList">
+        </tbody>
+    </table>
+</div>
+
+<script>
+    let products = [];
+
+    fetch('../static/data/products.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Failed to fetch products: ${response.status}`)
+            }
+            return response.json();
+        })
+        .then(data => {
+            products = data;
+            renderProducts();
+        })
+        .catch(error => {
+            console.error('Error fetching products:', error);
+        })
+
+        function renderProducts() {
+            let productList = document.getElementById("productsList");
+                products.forEach(product => {
+                    let teaCard = `
+                        <tr>
+                            <td>${product.name}</td>
+                            <td>${product.price}</td>
+                            <td>
+                                <button class="btn btn-warning btn-sm">Edit</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                    `;
+                    productList.innerHTML += teaCard;
+                });
+        }
+
+    function logout() {
+        window.location.href = "login.html";
+        localStorage.setItem("adminLoggedIn", "false");
+    }
+</script>
+
+</body>
+</html>
