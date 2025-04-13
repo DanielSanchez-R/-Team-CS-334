@@ -52,9 +52,11 @@
     async function addNewProduct() {
       const name = document.getElementById('newName').value;
       const price = parseFloat(document.getElementById('newPrice').value);
-      await addProduct({ name, price, image: '../static/assets/tea_background.png' });
+      const image = document.getElementById('newImage').value;
+      await addProduct({ name, price, image });
       document.getElementById('newName').value = '';
       document.getElementById('newPrice').value = '';
+      document.getElementById('newImage').value = '';
       loadProducts();
     }
 
@@ -100,6 +102,7 @@
       <h5>Add New Product</h5>
       <input type="text" id="newName" class="form-control mb-2" placeholder="Product Name">
       <input type="number" id="newPrice" class="form-control mb-2" placeholder="Price">
+      <input type="text" id="newImage" class="form-control mb-2" placeholder="Image URL">
       <button class="btn btn-success" onclick="addNewProduct()">Add Product</button>
     </div>
 
