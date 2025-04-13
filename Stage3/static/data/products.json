@@ -1,0 +1,12 @@
+[
+            { "name": "New Mexico Green Tea", "price": 5.99, "image": "../static/assets/tea_background.png" },
+            { "name": "New Mexico Black Tea", "price": 6.99, "image": "../static/assets/tea_background.png" },
+            { "name": "New Mexico Peppermint Tea", "price": 7.49, "image": "../static/assets/tea_background.png" },
+            { "name": "New Mexico Chamomile Tea", "price": 5.49, "image": "../static/assets/tea_background.png" },
+            { "name": "New Mexico Hibiscus Tea", "price": 6.79, "image": "../static/assets/tea_background.png" },
+            { "name": "New Mexico Mint Tea", "price": 5.89, "image": "../static/assets/tea_background.png" },
+            { "name": "New Mexico Chai Tea", "price": 7.99, "image": "../static/assets/tea_background.png" },
+            { "name": "New Mexico White Tea", "price": 8.49, "image": "../static/assets/tea_background.png" },
+            { "name": "New Mexico Oolong Tea", "price": 9.49, "image": "../static/assets/tea_background.png" },
+            { "name": "New Mexico Cinnamon Buns", "price": 4.99, "image": "../static/assets/tea_background.png" }
+]
