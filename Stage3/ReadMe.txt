@@ -7,3 +7,4 @@ Daniel Sanchez
 - Reworked JSON to new DB.json
 - Implemented client section functionality
 - Implemented admin section functionality
+- Uploaded website to AwardSpace
