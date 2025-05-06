@@ -1,3 +1,21 @@
+Team contributions :
+Daniel Sanchez:
+   - Flask Backend Implementation
+   - Database Setup with Flask-SQLAlchemy
+   - Progressive Web App (PWA) Configuration
+   - Order Processing and Email Functionality
+   - Public JSON API Endpoint
+   - GitHub Repository Management
+   - Execution pdf
+   - Testing of Web app
+
+Hannah Knight:
+   - Testing of Web app
+   - met with professor
+   - loaded app onto awardspace
+   - loaded app onto PythonAnywhere
+
+     
 New Mexico Tea Shop - Full Web App (out the box instructions and use)
 
 A complete tea shop web application that supports:
