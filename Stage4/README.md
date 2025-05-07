@@ -14,6 +14,7 @@ Hannah Knight:
    - met with professor
    - loaded app onto awardspace
    - loaded app onto PythonAnywhere
+   - presented application to professor
 
      
 New Mexico Tea Shop - Full Web App (out the box instructions and use)
